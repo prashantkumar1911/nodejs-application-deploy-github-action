@@ -19,7 +19,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             set -e
-            cd /home/ubuntu/nodejs-application-deploy-github-action
+            cd /nodejs-application-deploy-github-action
             git pull origin main
             docker compose down
             docker compose up -d --build
